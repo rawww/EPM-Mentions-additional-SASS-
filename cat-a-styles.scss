@@ -1,0 +1,491 @@
+// EPM Mentions category A snags - sass - 30/4/20
+
+/* ==========================================================================
+   media query reference
+   ========================================================================== */
+
+/* Small only */
+//@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+//@media screen and (min-width: 40em) {}
+
+/* Medium only */
+//@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+//@media screen and (min-width: 64em) {}
+
+/* Large only */
+//@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+
+
+//jQuery UI
+
+.ui-accordion .ui-accordion-content {
+  //overflow:visible;
+}
+
+.ui-accordion .ui-accordion-content {
+  @media screen and (max-width: 1024px) {
+    padding:0;
+  }
+}
+
+//fixes
+
+.block-header .navigation .button {
+    height: 100%;
+}
+
+//pagination bootstrap / foundation conflicts
+
+.pagination>li>a, .pagination>li>span {
+  float:none;
+  border:0 !important;
+  color:#8AC44A !important;
+}
+
+.pagination .current {
+    padding: 6px 12px;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+  color:#0a0a0a !important;
+}
+
+
+//headers
+
+.UID-Mentions-Mention, #VehicleIncidentsOutlineSection, #VehicleIncidentDetailsSection, #VehicleIncidentWitnessSection, #VehicleIncidentRequestsSection, #VehicleIncidentsCircumstancesSection, #VehicleIncidentsThirdPartyWitnessSection, #VehicleIncidentsInsuranceSection, #VehicleIncidentsInsuranceSection, #VehicleIncidentsDiarySection, #VehicleIncidentsDocumentsSection {
+  h2,h3,h4 {
+    text-align: left !important;
+    font-size:1.8rem;
+    color:#1B1433 !important;
+  }
+}
+
+//top level
+
+a:hover {
+  text-decoration:none !important;
+}
+
+//loading modal
+.reveal-overlay:has(> #searchFilterLoadingModal) {
+  background-color:#1B1433 !important;
+}
+
+#searchFilterLoadingModal, #searchFilterLoadingModalContent {
+  border:0 !important;
+  border-radius:0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+//buttons
+
+#commsSummaryId, #vehicleIncidentSummaryId {
+  .mentionsColumnOptionsButton {
+     float:right;
+  }
+}
+
+#btnRelatedCommunications {
+   margin-top:20px;
+}
+
+#saveColumnOptionsModal {
+  margin:10px 0 0 10px;
+}
+//sidebar adjustments
+
+@media screen and (min-width: 980px) {
+  .block-edit .sidebar label {
+      padding: 0;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .block-edit .sidebar .epmSearchFilters {
+      padding: 0;
+  }
+}
+
+
+//sidebar icon sizes
+
+.searchfilterIconUp, .searchfilterIconDown {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    background-size: contain !important;
+    @media screen and (max-width: 40em) {
+      display: block;
+      margin: 0 auto;
+    }
+}
+
+.ui-accordion-header {
+  @media screen and (max-width: 40em) {
+    text-align:center;
+  }
+}
+
+.block-edit .sidebar li img {
+    max-width: 30px;
+}
+
+//tables
+
+.dataTables_length {
+  text-align:right;
+}
+
+#MandatoryFieldsTable {
+  margin-bottom:20px;
+}
+
+//right click contextual menus on tables
+.comms-summary-menu {
+  font-family: museo-sans-rounded,sans-serif !important;
+  border-color:#f8f8f8;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+  //check this does not affect other ... menus
+  margin:0 0 0 -150px;
+}
+
+.comms-summary-menu li {
+  font-weight:bold;
+}
+
+.comms-summary-menu li:hover {
+    background-color: #e8e7ea;
+}
+
+.block-edit .dataTables_wrapper tr:hover {
+    background: #e8e7ea;
+}
+
+// hide sorting graphic for elipssis columns in tables (not required)
+
+.dummyHeaderForEllipsis {
+   background:none !important;
+}
+
+//calendar ui
+
+#BasicFilter {
+  //only needed on vehicle incidents summary, request body classes
+  //overflow:visible;
+}
+
+.bootstrap-datetimepicker-widget {
+  z-index:99999999 !important;
+    .picker-switch a {
+      color:#1B1433 !important;
+      padding:0 !important;
+      text-align:center !important;
+      &:hover {
+        background:#fff !important;
+      }
+
+      span:hover {
+        background:#fff !important;
+      }
+    }
+
+    table td, table th, span {
+      border-radius:0 !important;
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      border-radius: 0 !important;
+    }
+
+    span {
+      width:auto !important;
+    }
+
+    tbody tr:nth-child(even) {
+      background:#fff;
+      color:#1B1433 !important;
+
+    }
+
+    tbody tr:nth-child(odd) {
+      background:#fff;
+      color:#1B1433 !important;
+    }
+
+   table td.today:before {
+      border-bottom-color: #fff !important;
+    }
+
+    .today {
+      background:#1B1433 !important;
+      color:#fff !important;
+    }
+
+     .active {
+      background:#70a536 !important;
+      color:#fff !important;
+    }
+}
+
+
+//letter template MCE editor
+
+.tox-tinymce {
+  margin-bottom:20px;
+}
+
+//stop dash widgets overflowing
+
+.dash-cell {
+  overflow:hidden;
+}
+
+// dt-button overlay hidden
+
+.dt-button-background {
+  display:none !important;
+}
+
+// dt-button restyling
+
+div.dt-button-collection {
+  z-index:99999999 !important;
+    //margin-left: -8px;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top:10px;
+}
+
+.dt-button-collection {
+padding: 0 !important;
+  .dt-button {
+      text-align:left;
+      background:#fff !important;
+      color:#1B1433  !important;
+      font-size:14.4px !important;
+      border:0 !important;
+      background-repeat:no-repeat !important;
+      background-position: center right !important;
+      background-size: 25px !important;
+      margin-right:15px;
+      border-bottom: 1px solid #d8d8d8 !important;
+  }
+
+  .dt-button:hover {
+    //background:#fff !important;
+    border:0 !important;
+    background-repeat:no-repeat !important;
+    background-position: center right !important;
+    background-size: 25px !important;
+    border-bottom: 1px solid #d8d8d8 !important;
+  }
+
+  .buttons-copy {
+     background-image:url(https://www.epmorris.co.uk/mentions/img/ico-copy.png) !important;
+     &:hover {
+       background-image:url(https://www.epmorris.co.uk/mentions/img/ico-copy.png) !important;
+       background-color:#fff !important;
+     }
+  }
+
+  .buttons-excel {
+    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-excel.png) !important;
+    &:hover {
+      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-excel.png) !important;
+      background-color:#fff !important;
+    }
+  }
+
+  .buttons-csv {
+    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-csv.png) !important;
+    &:hover {
+      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-csv.png) !important;
+      background-color:#fff !important;
+    }
+  }
+
+  .buttons-pdf {
+    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-pdf.png) !important;
+    &:hover {
+      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-pdf.png) !important;
+      background-color:#fff !important;
+    }
+  }
+
+  .buttons-print {
+    border-bottom: 0 !important;
+    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-print.png) !important;
+    &:hover {
+      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-print.png) !important;
+      background-color:#fff !important;
+      border-bottom: 0 !important;
+
+    }
+  }
+
+
+}
+
+//map search
+
+#mapSearchSection {
+  margin-top:20px;
+  #btnSearchMap {
+    color:#fff !important;
+  }
+}
+
+//editable tags
+
+.TagContainer {
+  margin-left:0;
+}
+
+.editableTag {
+  position:relative;
+  -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0);
+  box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0);
+  border-radius: 25px !important;
+  margin: 0 10px 10px 30px;
+  height:43px;
+  &:hover {
+    color:#70a536 !important;
+  }
+  input {
+    padding:0;
+    border:0;
+  }
+  input:focus, input:active {
+    border: 0;
+    background: transparent !important;
+    -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0);
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0);
+  }
+  .DeleteTagButton {
+    &:hover {
+      cursor:hand;
+      cursor:pointer;
+    }
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    font-size: 20px;
+    font-family: Museo-sans-rounded;
+  }
+
+  .AddTagButton {
+    &:hover {
+      cursor:hand;
+      cursor:pointer;
+    }
+    position: absolute;
+    right: 10px;
+    top: 39px;
+    font-size: 17px;
+  }
+}
+
+//column sorting
+
+#columnOptionsModal {
+
+  .ExpandRelatedRecords {
+     background:url(https://www.epmorris.co.uk/mentions/img/ico-close.png) no-repeat center center !important;
+     padding: 0;
+     width: 15px;
+     height: 15px;
+     border: 0;
+     text-indent: -41984px;
+     background-size: contain!important;
+     margin: 14px 18px;
+  }
+
+  select {
+    margin:0 !important;
+  }
+
+  .sortable li {
+    margin: 10px 0;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  .sortable li:active, .sortable li:hover {
+    background: url(https://www.epmorris.co.uk/mentions/img/ico-move-col.png) no-repeat center right #fff !important;
+    background-size:23px !important;
+    background-position:center right;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .columnOption {
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+}
+
+//reveals
+
+.reveal-overlay {
+  background:rgba(73, 31, 139, 0.75);
+}
+
+.searchFilterLoadingModalDialog.reveal-overlay, .configLoadingModalDialog.reveal-overlay {
+  background:transparent !important;
+  border:0 !important;
+}
+
+.loaderIcon {
+  background:none !important;
+  border:0 !important;
+}
+
+.searchFilterLoadingModalDialog {
+    top: 40% !important;
+}
+
+//dashboard
+
+.dash-cell .expand {
+    position: absolute;
+    top: 31px;
+    right: 112px;
+    width: 17px;
+}
+
+.dashboardTile iframe {
+  border:0;
+}
+
+
+// page specific styles
+
+.UID-VehicleIncidents-Summary {
+  //prevent calendar hidden
+  #BasicFilter {
+    overflow:visible;
+  }
+  .dt-buttons {
+    text-align: left !important;
+  }
+
+  #UserOptionsFilter {
+    padding: 0 10px;
+  }
+}
