@@ -294,42 +294,42 @@ padding: 0 !important;
   }
 
   .buttons-copy {
-     background-image:url(https://www.epmorris.co.uk/mentions/img/ico-copy.png) !important;
+     background-image:url(images-new/ico-copy.png) !important;
      &:hover {
-       background-image:url(https://www.epmorris.co.uk/mentions/img/ico-copy.png) !important;
+       background-image:url(images-new/ico-copy.png) !important;
        background-color:#fff !important;
      }
   }
 
   .buttons-excel {
-    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-excel.png) !important;
+    background-image:url(images-new/ico-excel.png) !important;
     &:hover {
-      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-excel.png) !important;
+      background-image:url(images-new/ico-excel.png) !important;
       background-color:#fff !important;
     }
   }
 
-  .buttons-csv {
-    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-csv.png) !important;
+  .buttons-csv { 
+    background-image:url(images-new/ico-csv.png) !important;
     &:hover {
-      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-csv.png) !important;
+      background-image:url(images-new/ico-csv.png) !important;
       background-color:#fff !important;
     }
   }
 
   .buttons-pdf {
-    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-pdf.png) !important;
+    background-image:url(images-new/ico-pdf.png) !important;
     &:hover {
-      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-pdf.png) !important;
+      background-image:url(images-new/ico-pdf.png) !important;
       background-color:#fff !important;
     }
   }
 
   .buttons-print {
     border-bottom: 0 !important;
-    background-image:url(https://www.epmorris.co.uk/mentions/img/ico-print.png) !important;
+    background-image:url(images-new/ico-print.png) !important;
     &:hover {
-      background-image:url(https://www.epmorris.co.uk/mentions/img/ico-print.png) !important;
+      background-image:url(images-new/ico-print.png) !important;
       background-color:#fff !important;
       border-bottom: 0 !important;
 
@@ -403,7 +403,7 @@ padding: 0 !important;
 #columnOptionsModal {
 
   .ExpandRelatedRecords {
-     background:url(https://www.epmorris.co.uk/mentions/img/ico-close.png) no-repeat center center !important;
+     background:url(images-new/ico-close.png) no-repeat center center !important;
      padding: 0;
      width: 15px;
      height: 15px;
@@ -426,7 +426,7 @@ padding: 0 !important;
   }
 
   .sortable li:active, .sortable li:hover {
-    background: url(https://www.epmorris.co.uk/mentions/img/ico-move-col.png) no-repeat center right #fff !important;
+    background: url(images-new/ico-move-col.png) no-repeat center right #fff !important;
     background-size:23px !important;
     background-position:center right;
     -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
