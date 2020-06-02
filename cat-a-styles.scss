@@ -24,10 +24,6 @@
 //jQuery UI
 
 .ui-accordion .ui-accordion-content {
-  //overflow:visible;
-}
-
-.ui-accordion .ui-accordion-content {
   @media screen and (max-width: 1024px) {
     padding:0;
   }
@@ -37,6 +33,10 @@
 
 .block-header .navigation .button {
     height: 100%;
+}
+
+#dashboardTileGrid .button.bgprimary {
+  background:#70a536 !important;
 }
 
 //pagination bootstrap / foundation conflicts
@@ -178,10 +178,7 @@ a:hover {
 
 //calendar ui
 
-#BasicFilter {
-  //only needed on vehicle incidents summary, request body classes
-  //overflow:visible;
-}
+
 
 .bootstrap-datetimepicker-widget {
   z-index:99999999 !important;
@@ -309,7 +306,7 @@ padding: 0 !important;
     }
   }
 
-  .buttons-csv { 
+  .buttons-csv {
     background-image:url(images-new/ico-csv.png) !important;
     &:hover {
       background-image:url(images-new/ico-csv.png) !important;
@@ -440,6 +437,13 @@ padding: 0 !important;
 
 }
 
+//tables
+
+.dataTables_wrapper .sorting {
+    background-image: url(images-new/both.svg) !important;
+    background-size: 25px;
+}
+
 //reveals
 
 .reveal-overlay {
@@ -473,6 +477,46 @@ padding: 0 !important;
   border:0;
 }
 
+//add tile modal on dashboard screen
+
+.ui-widget.ui-widget-content {
+    border: 0;
+}
+
+#DashboardTileConfigModalHeader {
+  h3 {
+    padding: 20px 0 0 0;
+  }
+
+  hr {
+    display:none;
+  }
+}
+
+#DashboardNewTileModalContent {
+
+
+  .dash-cell {
+    //simulate grid-margin x and y on cells in stylesheet
+    margin: 0.9375rem;
+    width: calc(100% - 1.875rem);
+    @media screen and (min-width: 40em) {
+      width: calc(50% - 1.875rem);
+    }
+    @media screen and (min-width: 64em) {
+      width: calc(33.33333% - 1.875rem) !important;
+    }
+
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0);
+    &:hover {
+      -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.12);
+      cursor:pointer;
+    }
+  }
+}
+
 
 // page specific styles
 
@@ -488,4 +532,8 @@ padding: 0 !important;
   #UserOptionsFilter {
     padding: 0 10px;
   }
+}
+
+.UID-Configuration-LetterTemplate #btnTemplateSave {
+  margin-right:10px;
 }
